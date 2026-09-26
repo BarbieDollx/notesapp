@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root,
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #fafafc;
+  --glass-bg: rgba(30, 41, 50, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --primary: rgb(231, 52, 136);
+  --primary-hover: #818cf8;
+  --danger: #ef4444;
+  --success: #10b981;
+  --card-hover: rgba(30, 41, 59, 0.9);
+  --input-bg: rgba(35, 23, 42, 0.8);
+}
+
+[data-theme="light"] {
+  --bg-color: #f0f2f5;
+  --text-color: #1a1e1a;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  --primary: rgb(231, 52, 136);
+  --primary-hover: #4338ca;
+  --danger: #ef4444;
+  --success: #10b981;
+  --card-hover: rgba(255, 255, 255, 0.9);
+  --input-bg: rgba(255, 255, 255, 0.9);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'inter', sans-serif;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+  background-image: 
+  radial-gradient(circle at 15% 50%, rgba(79, 70, 229, 0.15), transparent 60%),
+  radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.15), transparent 60%);
+}
+
+.glass{
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+}
+
+.glass-card{
+  transition: transform 0.2s, background 0.3s;
+}
+
+.glass-card:hover{
+  transform: translateY(-4px);
+  background: var(--card-hover);
+}
+
+.app-container{
+  display: flex;
+  height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.icon-btn{
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.icon-btn:hover{ 
+  background: rgb(231, 52, 136);
+}
+
+.main-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow: auto;
+}

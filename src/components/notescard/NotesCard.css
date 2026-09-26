@@ -1,0 +1,44 @@
+.note-card{
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    cursor: pointer;
+    height: 216px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.note-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+}
+
+.note-title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note-content{
+    flex: 1;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.note-footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 0.75rem;
+   opacity: 0.6;
+   margin-top: auto;
+}

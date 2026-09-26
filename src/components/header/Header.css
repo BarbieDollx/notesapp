@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background: var(--input-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    width: 300px;
+}
+
+.search-bar input{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--text-color);
+    margin-left: 0.5rem;
+    width: 100px;
+}

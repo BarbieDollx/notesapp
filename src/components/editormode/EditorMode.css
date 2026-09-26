@@ -1,0 +1,82 @@
+.mode-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    backdrop-filter: blur(5px);
+}
+
+.editor-mode{
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+}
+
+.editor-header{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editor-title{
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+    outline: none;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.editor-toolbar{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.color-picker {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.color-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease;
+}
+
+.color-circle:hover {
+  transform: scale(1.15);
+}
+
+.color-circle.active{
+    border-radius: var(--primary);
+}
+
+.editor-content{
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
