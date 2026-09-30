@@ -40,10 +40,7 @@ const EditorMode = ({ note: initialNote, onSave, onClose }) => {
     <div className="mode-overlay" onClick={onClose}>
       <div
         className="editor-mode glass"
-        style={{
-          background:
-            note.color !== "var(--glass-bg)" ? note.color : "var(--glass-bg)",
-        }}
+        style={{background: note.color !== "var(--glass-bg)" ? note.color : "var(--glass-bg)"}}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="editor-header">
@@ -88,12 +85,7 @@ const EditorMode = ({ note: initialNote, onSave, onClose }) => {
           </div>
 
           <div
-            style={{
-              width: "1px",
-              height: "24px",
-              background: "var(--glass-border)",
-              margin: "0 0.5rem",
-            }}
+            style={{width: "1px", height: "24px", background: "var(--glass-border)", margin: "0 0.5rem", }}
           />
 
           <Tag size={16} opacity={0.6} />
@@ -119,13 +111,7 @@ const EditorMode = ({ note: initialNote, onSave, onClose }) => {
               value={tagInput}
               onChange={(e) => setTagInput(e.target.value)}
               onKeyDown={addTag}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "inherit",
-                outline: "none",
-                fontSize: "0.8rem",
-              }}
+              style={{background: "transparent", border: "none", color: "inherit", outline: "none", fontSize: "0.8rem",}}
             />
           </div>
         </div>

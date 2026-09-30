@@ -42,3 +42,37 @@
    opacity: 0.6;
    margin-top: auto;
 }
+
+
+@media (max-width: 768px) {
+  .note-card {
+    padding: 0.75rem;
+    height: auto;              /* let content determine height */
+    min-height: 140px;
+    gap: 0.5rem;
+  }
+
+  .note-title {
+    font-size: 0.95rem;
+  }
+
+  .note-content {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    /* clamp long content so cards stay even */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .note-footer {
+    font-size: 0.75rem;
+  }
+
+
+  .note-card .icon-btn {
+    min-width: 36px;
+    min-height: 36px;
+  }
+}
